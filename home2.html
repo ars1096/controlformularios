@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios</title>
+    <script>
+        function testformulario() {
+            return false
+        }
+    </script>
+</head>
+<body>
+<form  id = "test" name ="test" onsubmit=" return testformulario();"></form>
+<div>
+<label for="nombre" >
+    Nombre:
+</label>
+<input type="text" form="test" id="nombre" placeholder="Nombre..." required autofocus >
+</div>
+
+<label for="direc" >
+    Email:
+</label>
+<input label= Direccion type="email" form="test" id="direc" placeholder="correo..." required>
+
+<div>
+    <label for="nombre" >
+        rango:
+    </label>
+    <input type="range" form="test" min="100" max="200" step="20"  >
+</div>
+
+<div>
+    <label form="fecha" >
+        fecha:
+    </label>
+    <input type="date" form="test" min="100" max="200"  >
+</div>
+
+<div>
+    <label form="progreso" >
+        progreso:
+    </label>
+   <progress value="15" max="30"></progress>
+</div>
+
+<input type="submit" value="Enviar" form="test">
+</body>
+</html>
